@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  input, button, select {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .loading {
+    display: none;
+    margin-top: 20px;
+  }
+  #generated-image {
+    margin-top: 20px;
+    display: none;
+    border: 5px solid white;
+    animation: reveal 3s linear forwards;
+  }
+  @keyframes reveal {
+    from { clip-path: inset(100% 0 0 0); }
+    to { clip-path: inset(0 0 0 0); }
+  }
+  .glowing-border {
+    border: 5px solid #00ff00;
+    border-radius: 5px;
+    animation: glow 1s infinite alternate;
+  }
+  @keyframes glow {
+    from { box-shadow: 0 0 10px #00ff00; }
+    to { box-shadow: 0 0 20px #00ff00; }
+  }
+  
