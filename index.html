@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI Image Generator</h1>
+      <p>Type what you want and select a genre!</p>
+      <input type="text" id="prompt" placeholder="Enter your prompt..." />
+      <select id="genre">
+        <option value="futuristic">Futuristic</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="photorealistic">Photorealistic</option>
+        <option value="abstract">Abstract</option>
+      </select>
+      <button id="generate-btn">Generate Image</button>
+      <div class="loading">
+        <img src="loading.gif" alt="Loading..." width="100" />
+        <p>Generating your image...</p>
+      </div>
+      <div id="image-container">
+        <img id="generated-image" src="" alt="Generated AI Image" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
